@@ -1,0 +1,66 @@
+name: "不具合・観測・反証 / Bug, observation, counterexample"
+description: "実装の不具合、再現可能な観測、数学的反例、文書の誤読を記録します。日本語推奨、他言語も歓迎。"
+title: "[Issue] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **日本語での記述を推奨しますが、英語・その他の言語でも投稿できます。翻訳や完全な証明は受付条件ではありません。**
+        Please write in Japanese if convenient. English and other languages are welcome. Partial reports and UNKNOWN are valid.
+        対象repositoryの `AGENTS.md` とCONTRIBUTINGを尊重してください。機密、第三者の個人情報、非公開素材は貼らないでください。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "種類 / Type"
+      options:
+        - "不具合 / Bug"
+        - "観測・証跡 / Observation or evidence"
+        - "反証・数学的反例 / Counterexample"
+        - "ドキュメント誤読・改善 / Documentation"
+        - "セキュリティを除くその他 / Other non-security issue"
+    validations:
+      required: false
+  - type: textarea
+    id: claim
+    attributes:
+      label: "何が起きた／何を指摘したい？ / Observation or claim"
+      description: "観測したこと、提案、解釈を区別してください。不確かなら UNKNOWN と書けます。"
+      placeholder: "現象、期待との差、対象となる主張..."
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: "対象・範囲 / Target and scope"
+      placeholder: "Repository, file/link, issue, revision/commit, World, Fold, device, runtime; unknown is OK"
+    validations:
+      required: false
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "再現方法／反例／推論 / Reproduction or counterexample"
+      description: "検証可能なら手順や最小例。難しければ仮説として提出できます。機密や危険な手順を要求しません。"
+      placeholder: "Steps, minimal code, equations, premises, example, or UNKNOWN"
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "証拠・出典・観測者 / Evidence and provenance"
+      placeholder: "Public logs, test results, screenshots, source, Observer, date, rule; unknown if unavailable"
+    validations:
+      required: false
+  - type: textarea
+    id: boundary
+    attributes:
+      label: "何はまだ分からない？ / Unknowns and claim boundary"
+      placeholder: "Not tested, unknown, outside scope, cannot infer..."
+    validations:
+      required: false
+  - type: textarea
+    id: change
+    attributes:
+      label: "望む対応（任意） / Suggested next step (optional)"
+      placeholder: "Fix, docs clarification, reproduce, discuss, or propose a PR"
+    validations:
+      required: false
