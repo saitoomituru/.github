@@ -1,0 +1,58 @@
+name: "提案・設計・翻訳 / Proposal, design, translation"
+description: "仕様、Fold / World境界、文章、翻訳、研究案を提案します。日本語推奨、他言語も歓迎。"
+title: "[Proposal] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **日本語が推奨言語です。英語・その他の言語は禁止しません。** Contributors do not need to translate their own submissions.
+        仮説・信仰・数学的着想・観測fact・実装済み機能を混同せず、未確定は UNKNOWN で残してください。
+  - type: textarea
+    id: purpose
+    attributes:
+      label: "目的／困りごと / Purpose or pain"
+      description: "何を守り、何を可能にしたいですか？"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "変更の対象と範囲 / Target and scope"
+      placeholder: "Repository, World, component, doc, interface, existing contracts, affected users"
+    validations:
+      required: false
+  - type: textarea
+    id: idea
+    attributes:
+      label: "提案内容 / Proposal"
+      placeholder: "Explain the approach in your language; pseudocode, drawing or a brief note is fine"
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "代替案・既存手段 / Alternatives and reuse"
+      placeholder: "Existing tools, adapters, prior docs, related issues or UNKNOWN"
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "根拠・主張の層 / Evidence and claim layer"
+      placeholder: "Design hypothesis, experience, measurement, mathematics, narrative, implementation receipt..."
+    validations:
+      required: false
+  - type: textarea
+    id: unknown
+    attributes:
+      label: "UNKNOWN・互換・停止条件 / Unknowns, compatibility and stop conditions"
+      placeholder: "What is not verified? Any authority/permission or cross-World boundary?"
+    validations:
+      required: false
+  - type: textarea
+    id: contribution
+    attributes:
+      label: "PR・検証・協力の見通し（任意） / Possible contribution"
+      placeholder: "PR link, test, translation, prototype, or discussion only"
+    validations:
+      required: false
