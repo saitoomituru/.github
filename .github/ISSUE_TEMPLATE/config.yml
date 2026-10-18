@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "ZeroRoomLab: issueの書き方と日本語推奨 / Contribution guide"
+    url: "https://github.com/saitoomituru/ZeroRoomLab-manifest/blob/main/docs/operations/issue-contribution-guidelines.ja.md"
+    about: "言語、Evidence、UNKNOWN、PI/AI agent、World境界を参照します / Read the contribution guidelines"
